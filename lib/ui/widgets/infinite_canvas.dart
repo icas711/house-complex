@@ -56,8 +56,8 @@ print(scalePixels);
           ),
           for (final marker in widget.item.points) ...[
             Positioned(
-              left: (marker['x']!.toDouble()-25/scaleSize)*scalePixels,
-              bottom: (marker['y']!.toDouble()-25/scaleSize)*scalePixels,
+              left: marker['x']!.toDouble()-25/scaleSize,
+              bottom: marker['y']!.toDouble()-25/scaleSize,
               child: SizedBox(
                 width: 50/scaleSize,
                 height: 50/scaleSize,
